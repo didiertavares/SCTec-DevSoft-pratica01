@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Matrícula</title>
+</head>
+<body>
+    <header>
+        <h1>Formulário de matrícula semestre 1 /2026</h1>
+        <form action="" id="matricula" name="matricula">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+    
+            <label for="idade">Idade:</label>
+            <input type="text" id="idade" name="idade" required><br>
+
+            <label for="assunto">Assunto:</label>
+            <select name="assunto" id="assunto">
+                <option value="solicitacao">solicitação de matrícula</option>
+                <option value="creditos">verificar créditos e pendências</option>
+                <option value="contestacao">pedido de reavaliação</option>
+            </select><br>
+
+            <label for="turnos">Turnos disponíveis:</label>
+            <select name="turnos" id="turnos">
+                <option value="manhã">matutino</option>
+                <option value="tarde">vespertino</option>
+                <option value="noite">noturno</option>
+            </select><br>
+
+            <input type="checkbox" id="turnoalt" name="turnoalt">
+            <label for="turnoalt">Deseja lecionar em mais de 1 turno?</label><br>
+            
+            <label for="qualturnoalt">Se sim, qual turno?</label>
+            <select name="qualturnoalt" id="qualturnoalt">
+                <option value="nenhum">---</option>
+                <option value="manhã">matutino</option>
+                <option value="tarde">vespertino</option>
+                <option value="noite">noturno</option>
+            </select><br>
+
+            <label for="materia">Para qual matéria você está se candidatando para lecionar?</label>
+            <select name="materia" id="materia">
+                <option value="matematica">Matemática</option>
+                <option value="portugues">Português</option>
+                <option value="biologia">Biologia</option>
+                <option value="ciencias">Ciências</option>
+                <option value="historia">História</option>
+                <option value="geografia">Geografia</option>
+                <option value="artes">Artes</option>
+            </select><br>
+
+            <label for="escolaridade">Nível de escolaridade:</label>
+            <select name="escolaridade" id="escolaridade">
+                <option value="superiorcompleto">Ensino Superior completo</option>
+                <option value="cursandomestrado">cursando Mestrado</option>
+                <option value="mestradocompleto">Mestrado completo</option>
+                <option value="cursandodoutorado">cursando Doutorado</option>
+                <option value="doutoradocompleto">Doutorado completo</option>
+            </select><br>
+
+            <label for="descricao">Fale um pouco de você:</label><br>
+            <textarea maxlength="200" name="descricao" id="descricao" cols="50" rows="6"></textarea><br>
+
+            <label for="enviarform">Enviar respostas</label>
+            <input type="submit" value="enviarform">
+        </form>
+    </header>
+</body>
+</html>
